@@ -23,11 +23,13 @@ LlanquihueTour/
 ├── src/cl/llanquihuetour/
 │   ├── app/
 │   │   └── Main.java       # Punto de entrada y ejemplo de uso del sistema
-│   └── model/
-│       ├── Persona.java    # Datos personales, de contacto y dirección
-│       ├── Empleado.java   # Extiende Persona con fecha de ingreso y estado activo
-│       └── Direccion.java  # Dirección asociada a una persona
-├── LlanquihueTour.iml      # Configuración del módulo de IntelliJ IDEA
+│   ├── model/
+│   │   ├── Persona.java    # Datos personales, de contacto y dirección
+│   │   ├── Empleado.java   # Extiende Persona con fecha de ingreso y estado activo
+│   │   └── Direccion.java  # Dirección asociada a una persona
+│   └── utils/
+│       └── Validador.java  # Validación reutilizable de textos nulos o en blanco
+├── .gitignore             # Archivos y carpetas excluidos del control de versiones
 └── README.md              # Descripción e instrucciones del proyecto
 ```
 
@@ -37,29 +39,32 @@ LlanquihueTour/
 
 ## ⚙️ Instrucciones para clonar y ejecutar el proyecto
 
-1. Clona el repositorio desde GitHub:
+1. Instala Git, IntelliJ IDEA y un JDK 21, que es la versión configurada para el proyecto.
+
+2. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/usuario/repositorio-evaluacion-final.git
+git clone https://github.com/luisjulios/LlanquihueTour.git
 ```
 
-2. Abre el proyecto en IntelliJ IDEA.
+3. Abre la carpeta `LlanquihueTour` en IntelliJ IDEA.
 
-3. Verifica que los archivos `.txt` estén correctamente ubicados.
+4. En **File → Project Structure → Project**, selecciona el JDK 21 como SDK del proyecto. Si IntelliJ no reconoce las clases, haz clic derecho sobre `src` y selecciona **Mark Directory as → Sources Root**.
 
-4. Ejecuta el archivo `Main.java` desde el paquete `app`.
+5. Abre `src/cl/llanquihuetour/app/Main.java` y ejecuta el método `main` mediante el botón de ejecución junto a su declaración.
 
-5. Sigue las instrucciones en consola o en la interfaz gráfica (si corresponde).
+6. Revisa la consola de IntelliJ: el programa muestra los datos de un empleado y una persona, y ejecuta ejemplos de validación y manejo de excepciones. Los datos de ejemplo están definidos en `Main.java`; la ejecución no requiere archivos externos ni ingreso de datos por teclado.
 
-
----
-
-**Repositorio GitHub:** \[Pega aquí el enlace al repositorio]
-**Fecha de entrega:** \[DD/MM/2025]
 
 ---
 
-© Duoc UC | Escuela de Informática y Telecomunicaciones | Evaluación Final Transversal EFT
+**Repositorio GitHub:** https://github.com/luisjulios/LlanquihueTour.git
+
+**Fecha de entrega:** \[08/11/2026]
+
+---
+
+© Duoc UC | Escuela de Informática y Telecomunicaciones | Sumativa Semana 3
 
 
 
