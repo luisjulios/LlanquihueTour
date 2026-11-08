@@ -6,6 +6,9 @@ import cl.duoc.llanquihuetour.model.Persona;
 
 import java.time.LocalDate;
 
+
+//Autor: Luis Antonio Julio Saurith
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("¡Bienvenido a Llanquihue Tour!");
