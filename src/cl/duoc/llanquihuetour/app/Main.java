@@ -40,6 +40,10 @@ public class Main {
                 true
         );
 
+        System.out.println("*******Datos de Empleado*******");
+        System.out.println(empleadoDatos);
+
+
         Direccion clienteDireccion = new Direccion(
                 "Avenida Sucre",
                 "2885",
@@ -54,7 +58,9 @@ public class Main {
                 clienteDireccion
         );
 
-        System.out.println(empleadoDatos);
+
+
+        System.out.println("*******Datos de Cliente*******");
         System.out.println(clienteDatos);
 
 
