@@ -1,6 +1,6 @@
-package cl.llanquihuetour.model;
+package cl.duoc.llanquihuetour.model;
 
-import cl.llanquihuetour.utils.Validador;
+import cl.duoc.llanquihuetour.utils.Validador;
 
 public class Direccion {
     private String calle;

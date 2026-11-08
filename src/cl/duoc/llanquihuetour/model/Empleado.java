@@ -1,4 +1,4 @@
-package cl.llanquihuetour.model;
+package cl.duoc.llanquihuetour.model;
 
 import java.time.LocalDate;
 

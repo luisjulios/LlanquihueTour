@@ -1,4 +1,4 @@
-package cl.llanquihuetour.utils;
+package cl.duoc.llanquihuetour.utils;
 
 public class Validador {
     private Validador() {};

@@ -18,9 +18,11 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 
 ## 🧱 Estructura general del proyecto
 
+Las clases se organizan bajo el paquete base `cl.duoc.llanquihuetour`, con los subpaquetes `app`, `model` y `utils`.
+
 ```plaintext
 LlanquihueTour/
-├── src/cl/llanquihuetour/
+├── src/cl/duoc/llanquihuetour/
 │   ├── app/
 │   │   └── Main.java       # Punto de entrada y ejemplo de uso del sistema
 │   ├── model/
@@ -51,7 +53,7 @@ git clone https://github.com/luisjulios/LlanquihueTour.git
 
 4. En **File → Project Structure → Project**, selecciona el JDK 21 como SDK del proyecto. Si IntelliJ no reconoce las clases, haz clic derecho sobre `src` y selecciona **Mark Directory as → Sources Root**.
 
-5. Abre `src/cl/llanquihuetour/app/Main.java` y ejecuta el método `main` mediante el botón de ejecución junto a su declaración.
+5. Abre `src/cl/duoc/llanquihuetour/app/Main.java`, correspondiente a la clase `cl.duoc.llanquihuetour.app.Main`, y ejecuta el método `main` mediante el botón de ejecución junto a su declaración.
 
 6. Revisa la consola de IntelliJ: el programa muestra los datos de un empleado y una persona, y ejecuta ejemplos de validación y manejo de excepciones. Los datos de ejemplo están definidos en `Main.java`; la ejecución no requiere archivos externos ni ingreso de datos por teclado.
 

@@ -1,8 +1,8 @@
-package cl.llanquihuetour.app;
+package cl.duoc.llanquihuetour.app;
 
-import cl.llanquihuetour.model.Direccion;
-import cl.llanquihuetour.model.Empleado;
-import cl.llanquihuetour.model.Persona;
+import cl.duoc.llanquihuetour.model.Direccion;
+import cl.duoc.llanquihuetour.model.Empleado;
+import cl.duoc.llanquihuetour.model.Persona;
 
 import java.time.LocalDate;
 
