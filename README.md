@@ -18,13 +18,15 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 
 ## 🧱 Estructura general del proyecto
 
-Las clases se organizan bajo el paquete base `cl.duoc.llanquihuetour`, con los subpaquetes `app`, `model` y `utils`.
+Las clases se organizan bajo el paquete base `cl.duoc.llanquihuetour`, con los subpaquetes `app`, `exceptions`, `model` y `utils`.
 
 ```plaintext
 LlanquihueTour/
 ├── src/cl/duoc/llanquihuetour/
 │   ├── app/
 │   │   └── Main.java       # Punto de entrada y ejemplo de uso del sistema
+│   ├── exceptions/
+│   │   └── CampoVacioException.java # Excepción personalizada para textos requeridos
 │   ├── model/
 │   │   ├── Persona.java    # Datos personales, de contacto y dirección
 │   │   ├── Empleado.java   # Extiende Persona con fecha de ingreso y estado activo
@@ -38,6 +40,22 @@ LlanquihueTour/
 ---
 
 
+
+## Validaciones y excepciones
+
+`Validador.validarTexto(texto, tipo)` comprueba que un texto no sea `null`, vacío ni contenga únicamente espacios en blanco. Si es válido, devuelve el texto original; en caso contrario, lanza `CampoVacioException` con el mensaje `El campo <tipo> no puede estar vacío.`
+
+`CampoVacioException` hereda de `IllegalArgumentException`, por lo que es una excepción no comprobada: no exige declarar `throws` ni utilizar `try/catch`. También puede capturarse mediante un `catch (IllegalArgumentException e)`.
+
+Los constructores de `Persona` y `Direccion` utilizan sus setters para aplicar esta validación a los campos de texto. Además, el modelo comprueba lo siguiente mediante `IllegalArgumentException`:
+
+- El email debe contener `@`; no se realiza una validación completa de su formato.
+- La dirección de una persona no puede ser `null`.
+- La fecha de ingreso de un empleado no puede ser `null` ni posterior a la fecha actual.
+
+`Main` muestra un mensaje de bienvenida, crea un empleado y un cliente (representado por `Persona`) con sus respectivas direcciones e imprime sus datos mediante `toString()`. El ejemplo utiliza datos válidos y no captura excepciones; si se introduce un valor inválido, la excepción se propaga y finaliza la ejecución.
+
+---
 
 ## ⚙️ Instrucciones para clonar y ejecutar el proyecto
 
@@ -53,9 +71,11 @@ git clone https://github.com/luisjulios/LlanquihueTour.git
 
 4. En **File → Project Structure → Project**, selecciona el JDK 21 como SDK del proyecto. Si IntelliJ no reconoce las clases, haz clic derecho sobre `src` y selecciona **Mark Directory as → Sources Root**.
 
-5. Abre `src/cl/duoc/llanquihuetour/app/Main.java`, correspondiente a la clase `cl.duoc.llanquihuetour.app.Main`, y ejecuta el método `main` mediante el botón de ejecución junto a su declaración.
+5. Selecciona **Build → Build Project** para compilar el proyecto y verifica que la compilación finalice sin errores.
 
-6. Revisa la consola de IntelliJ: el programa muestra los datos de un empleado y una persona, y ejecuta ejemplos de validación y manejo de excepciones. Los datos de ejemplo están definidos en `Main.java`; la ejecución no requiere archivos externos ni ingreso de datos por teclado.
+6. Abre `src/cl/duoc/llanquihuetour/app/Main.java`, correspondiente a la clase `cl.duoc.llanquihuetour.app.Main`, y ejecuta el método `main` mediante el botón de ejecución junto a su declaración.
+
+7. Revisa la consola de IntelliJ: el programa muestra los datos de un empleado y una persona, incluyendo sus direcciones. Los datos de ejemplo están definidos en `Main.java`; la ejecución no requiere archivos externos ni ingreso de datos por teclado.
 
 
 ---

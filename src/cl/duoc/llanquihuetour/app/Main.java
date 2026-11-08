@@ -7,9 +7,20 @@ import cl.duoc.llanquihuetour.model.Persona;
 import java.time.LocalDate;
 
 
-//Autor: Luis Antonio Julio Saurith
-
+/**
+ * Punto de entrada de Llanquihue Tour. Demuestra la creación de un empleado
+ * y un cliente, representado por {@link Persona}, con sus respectivas direcciones.
+ *
+ * @author Luis Antonio Julio Saurith
+ */
 public class Main {
+    /**
+     * Muestra la bienvenida y los datos de ejemplo mediante sus métodos toString().
+     * Las validaciones se ejecutan al construir los objetos; las excepciones
+     * se propagan sin capturarse en este ejemplo.
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
         System.out.println("¡Bienvenido a Llanquihue Tour!");
 
@@ -43,27 +54,8 @@ public class Main {
                 clienteDireccion
         );
 
-
-
-
-        System.out.println(empleadoDatos);
-        System.out.println(clienteDatos);
-
-        try {
-            empleadoDatos.setNombreCompleto("");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error: "  + e.getMessage() + "\nLinea: " + e.getStackTrace()[e.getStackTrace().length - 1]);
-        } finally {
-            System.out.println(empleadoDatos);
-        }
-
-        try {
-            empleadoDatos.setFechaIngreso(LocalDate.of(2020, 5, 10));
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error: " + e.getMessage());
-        }  finally {
-            System.out.println(empleadoDatos);
-        }
+        System.out.println(empleadoDatos.toString());
+        System.out.println(clienteDatos.toString());
 
 
     }

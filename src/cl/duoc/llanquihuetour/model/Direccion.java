@@ -15,27 +15,35 @@ public class Direccion {
         setCiudad(ciudad);
         setRegion(region);
     }
+
     public String getCalle() {
         return calle;
     }
+
     public void setCalle(String calle) {
         this.calle = Validador.validarTexto(calle, "calle");
     }
+
     public String getNumero() {
         return numero;
     }
+
     public void setNumero(String numero) {
         this.numero = Validador.validarTexto(numero, "numero");
     }
+
     public String getCiudad() {
         return ciudad;
     }
+
     public void setCiudad(String ciudad) {
         this.ciudad = Validador.validarTexto(ciudad, "ciudad");
     }
+
     public String getRegion() {
         return region;
     }
+
     public void setRegion(String region) {
         this.region = Validador.validarTexto(region, "region");
     }
