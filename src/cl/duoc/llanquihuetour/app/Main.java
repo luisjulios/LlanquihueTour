@@ -54,8 +54,8 @@ public class Main {
                 clienteDireccion
         );
 
-        System.out.println(empleadoDatos.toString());
-        System.out.println(clienteDatos.toString());
+        System.out.println(empleadoDatos);
+        System.out.println(clienteDatos);
 
 
     }
