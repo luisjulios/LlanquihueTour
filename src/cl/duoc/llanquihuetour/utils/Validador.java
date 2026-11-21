@@ -11,4 +11,18 @@ public class Validador {
         }
         return texto;
     }
+
+    public static boolean validarBooleano(String valor) {
+        if (valor == null) {
+            throw new IllegalArgumentException("El campo activo no puede ser nulo.");
+        }
+
+        String normalizado = valor.trim();
+
+        if (!normalizado.equalsIgnoreCase("true") && !normalizado.equalsIgnoreCase("false")) {
+            throw new IllegalArgumentException("El campo activo debe contener true o false.");
+        }
+
+        return Boolean.parseBoolean(normalizado);
+    }
 }
