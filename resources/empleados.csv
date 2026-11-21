@@ -1,0 +1,13 @@
+nombreCompleto;email;telefono;calle;numero;ciudad;region;fechaIngreso;activo
+Satoru Gojo;satoru.gojo@jujutsu.example.com;+56911111111;Av. Infinito;100;Tokio;Kanto;2020-04-01;true
+Yuji Itadori;yuji.itadori@jujutsu.example.com;+56922222222;Calle Sukuna;200;Sendai;Miyagi;2022-03-15;true
+Megumi Fushiguro;megumi.fushiguro@jujutsu.example.com;+56933333333;Av. Sombras;300;Tokio;Kanto;2021-08-10;false
+Ichigo Kurosaki;ichigo.kurosaki@bleach.example.com;+56944444444;Calle Zangetsu;150;Karakura;Japon;2020-06-12;true
+Rukia Kuchiki;rukia.kuchiki@bleach.example.com;+56955555555;Av. Soul Society;250;Seireitei;Soul Society;2021-09-20;true
+Byakuya Kuchiki;byakuya.kuchiki@bleach.example.com;+56966666666;Calle Senbonzakura;350;Seireitei;Soul Society;2019-11-05;false
+Harry Potter;harry.potter@hogwarts.example.com;+56977777777;Privet Drive;4;Little Whinging;Surrey;2022-07-31;true
+Hermione Granger;hermione.granger@hogwarts.example.com;+56988888888;Calle Biblioteca;120;Londres;Inglaterra;2021-09-01;true
+Draco Malfoy;draco.malfoy@hogwarts.example.com;+56999999999;Av. Malfoy Manor;50;Wiltshire;Inglaterra;2020-02-14;false
+Usagi Tsukino;usagi.tsukino@sailormoon.example.com;+56912121212;Calle Luna;10;Tokio;Azabu Juban;2021-06-30;true
+Ami Mizuno;ami.mizuno@sailormoon.example.com;+56923232323;Av. Mercurio;20;Tokio;Azabu Juban;2022-09-10;true
+Hotaru Tomoe;hotaru.tomoe@sailormoon.example.com;+56934343434;Calle Saturno;30;Tokio;Azabu Juban;2023-11-11;false
